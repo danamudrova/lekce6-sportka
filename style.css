@@ -42,7 +42,7 @@ h1 {
 
 .cislo:last-child {
 	margin-left: 23px;
-	color: red;
+	color: black;
 }
 
 .cislo:last-child::after {
@@ -66,4 +66,23 @@ h1 {
 	filter: blur(35px);
 	transform: scale(0.8, 0.25);
 	opacity: 0.4;
+}
+
+#losuj {
+	margin-top: -20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 24px;
+	color: white;
+	border: 0;
+	border-radius: 20px;
+	background: #ff0844 linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	outline: 0;
+}
+
+#historie {
+	font-size: 20px;
+	color: #3b518d;
 }

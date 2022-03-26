@@ -16,6 +16,7 @@ body {
 
 h1, h2, h3 {
 	font-weight: normal;
+	text-align: center;
 }
 
 h1 {
@@ -69,7 +70,7 @@ h1 {
 }
 
 #losuj {
-	margin-top: -20px;
+	margin-top: 40px;
 	margin-bottom: 20px;
 	padding: 20px;
 	font-family: 'Paytone One', sans-serif;
@@ -80,9 +81,11 @@ h1 {
 	background: #ff0844 linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 	outline: 0;
+	
 }
 
 #historie {
-	font-size: 20px;
+	font-size: 30px;
 	color: #3b518d;
+	text-align: center;
 }

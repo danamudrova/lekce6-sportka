@@ -5,14 +5,13 @@ function losuj(){
     let tazenaCisla = [];
     let vyherniCisla = document.querySelector('#vyherni-cisla');
     let historie = document.querySelector('#historie');
-    let textTlacitka = document.querySelector('#losuj')
-    
+    let textTlacitka = document.querySelector('#losuj');
+
     document.querySelector('h1').textContent = "Výherní čísla";
     document.querySelector('h2').textContent = "Historie her";
 
     cisti();
  
-
     // vytvoření osudi
     for (let i = 1; i <= 49; i = i + 1) {
         osudi.unshift(i);
@@ -32,14 +31,13 @@ function losuj(){
         (function(j){
             window.setTimeout(function(){
                 vyherniCisla.innerHTML += '<span class="cislo">' + tazenaCisla[j] + '</span>';
-                historie.innerHTML += tazenaCisla [j]+", "
+                historie.innerHTML += tazenaCisla [j]+", ";
             }, j*2000);
         }(j));
+       
     }
-
-    historie.innerHTML += "<br>"
-    textTlacitka.textContent = "Losuj znovu";
-    
+    textTlacitka.textContent = "Losuj znovu"
+    historie.innerHTML += '<br>'
 }
 
 // vycisti formular pro dalsi losovani (úkol 3)
@@ -47,5 +45,3 @@ function cisti(){
     let vyherniCisla = document.querySelector('#vyherni-cisla');
     vyherniCisla.innerHTML = ""
 }
-
-
